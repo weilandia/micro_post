@@ -5,18 +5,18 @@
     <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages' %>
 
-      <%= f.label :name %>
-      <%= f.text_field :name, class:"form-control" %>
-
-      <%= f.label :email %>
-      <%= f.email_field :email, class:"form-control" %>
-
-      <%= f.label :password %>
-      <%= f.password_field :password, class:"form-control" %>
-
-      <%= f.label :password_confirmation %>
-      <%= f.password_field :password_confirmation, class:"form-control" %>
-
+      <%= f.label :name, class:"sr-only" %>
+      <%= f.text_field :name, class:"form-control", placeholder: "name" %>
+      <br>
+      <%= f.label :email, class:"sr-only" %>
+      <%= f.email_field :email, class:"form-control", placeholder: "email" %>
+      <br>
+      <%= f.label :password, class:"sr-only" %>
+      <%= f.password_field :password, class:"form-control", placeholder: "password" %>
+      <br>
+      <%= f.label :password_confirmation, class:"sr-only" %>
+      <%= f.password_field :password_confirmation, class:"form-control", placeholder: "retype password" %>
+      <br>
       <%= f.submit "Create my account", class:"btn btn-primary" %>
     <% end %>
   </div>

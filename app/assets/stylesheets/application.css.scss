@@ -13,14 +13,8 @@
  *= require_tree .
  *= require_self
  */
- // @import "bootstrap-sprokects";
- // @import "bootstrap";
- 
- @mixin box_sizing {
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   box-sizing: border-box;
- }
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
 
  body {
    padding-top: 60px;
